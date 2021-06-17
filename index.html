@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css" type='text/css' media='all' >
+	
+</head>
+
+<body>
+	
+	<form class="form" id="form" name="form" onsubmit="return validation()">
+	<fieldset>
+	<h2>Заполните форму</h2>
+		<input type="text" class="text" name="name" id="name" placeholder="Введите ваше имя">
+		<ul class="input-requirements">
+			<li>Содержит только буквы</li>
+		</ul>
+		<input type="text" class="text" name="surname" id="surname" placeholder="Введите вашу фамилию">
+		<ul class="input-requirements">
+			<li>Содержит только буквы</li>
+		</ul>
+		<input type="text" class="text" name="email" id="email" placeholder="Введите ваш email">
+		<ul class="input-requirements">
+			<li>Должен содержать "@"  и "."</li>
+		</ul>
+		<input type="text" class="text" name="phone" id="phone" placeholder="Введите ваш телефон">
+		<ul class="input-requirements">
+			<li>Должен начинаться с + </li>
+			<li>Не содержит букв</li>
+		</ul>
+		<textarea type="text" class="comm" name="comment" id="comment" placeholder="Введите ваше сообщение"></textarea>
+		
+		<button type="submit" class="sub"><span>Отправить</span></button>
+		</fieldset>
+	</form>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
